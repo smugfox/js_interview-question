@@ -1,0 +1,19 @@
+.box-wrapper {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background: blue;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease;
+
+}
+
+.box.triggered {
+  background: red;
+  left: calc(100% - 100px);
+}
